@@ -46,7 +46,7 @@ p {
 
 input,
 textarea  {
-  	outline: 0;
+/*  outline: 1;*/
 	border: none;
 	padding: 15px;
 	border-radius: .3em;
@@ -124,7 +124,8 @@ label {
 
 textarea:focus,
 input:focus {
-	border: solid 2px #2d3945;
+/*	border: solid 2px #2d3945;*/
+  outline: 2px solid #2d3945;
 }
 
 
