@@ -1,0 +1,185 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Merriweather', serif;
+	color: #2d3945;
+}
+
+header {
+	text-align: center;
+	background-color: #2d3945;
+	color: white;
+	margin: auto;
+	padding: 35px;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+.container {
+	margin: 10px auto;
+	padding: 10px 20px;
+	background: #ffffff;
+	width: 90%;
+}
+
+h1,
+p {
+  margin: 10px auto;
+  text-align: center;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+p {
+	font-weight: 300;
+	font-size: 1.1em;
+	color: #9da3a7;
+	padding-bottom: 40px;
+	border-bottom: solid 4px #2d3945;
+	text-align: center;
+}
+
+input,
+textarea  {
+  	outline: 0;
+	border: none;
+	padding: 15px;
+	border-radius: .3em;
+	margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  font-size: 16px;
+  height: auto;
+  margin: 0 auto;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+select {
+	height: 60px;
+	border:none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 15px 4px 0;
+  float: left;
+}
+
+button {
+  padding: 19px 39px 19px 39px;
+  color: #FFF;
+  background-color: #4ebbb5;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  min-width: 100%;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  opacity: .75;
+}
+
+fieldset {
+  border: none;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0;
+}
+
+legend {
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 25px 0;
+  border-top: 2px solid #2d3945;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+textarea:focus,
+input:focus {
+	border: solid 2px #2d3945;
+}
+
+
+footer p {
+	font-weight: 300;
+	font-style: italic;
+	border: none;
+	padding: 20px 0;
+}
+
+@media (min-width: 760px) {
+	
+    .flexible-input {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        flex-grow: 2;
+    }
+
+    .container {
+      max-width: 960px;
+    }
+
+    .flexible-input label {
+    	width: 150px;
+      flex-grow: 1;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="tel"],
+    select {
+        width: 445px;
+        margin-bottom: 0;
+    }
+
+/*    input[id="zipcode"] {
+        width: 150px;
+    }
+
+    .flexible-input:last-child {
+      	width: 445px;
+        margin-bottom: 20px;
+    }*/
+
+	textarea {
+		float: none;
+		width: 100%;
+	}
+
+/*	select {
+		height: 60px;
+		border:none;
+	}*/
+
+}
