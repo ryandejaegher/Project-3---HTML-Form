@@ -9,134 +9,133 @@
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 
-	<body>
+<body>
 
-<header>The Code Review</header>
+	<header>The Code Review</header>
 
-<div class="container">
+	<div class="container">
 
-<h1>Signup for our newsletter</h1>
-<p> Get the latest news on how your code is doing right in your inbox</p>
+	<h1>Signup for our newsletter</h1>
+	<p> Get the latest news on how your code is doing right in your inbox</p>
 
-<form action="index.html" method="post">
+	<form action="index.html" method="post">
 
-	<fieldset>
+		<fieldset>
 
-		<legend>Contact Information</legend>
+			<legend>Contact Information</legend>
 
-		<div class="flexible-input">
-		<label for="name">Full Name</label>
-		<input type="text" id="name" name="user_name" placeholder="Required" required></div>
+			<div class="flexible-input">
+			<label for="name">Full Name</label>
+			<input type="text" id="name" name="user_name" placeholder="Required" required></div>
+			
+			<div class="flexible-input">
+			<label for="email">Email Address</label>
+			<input type="email" id="email" name="user_email" placeholder="Required" required></div>
+
+			<div class="flexible-input">
+			<label for="phone">Phone Number</label>
+			<input type="tel" id="phone" name="user_phone"></div>
+
+			<div class="flexible-input">
+			<label for="address">Street Address</label>
+			<input type="text" id="address" name="user_address"></div>
+
+			<div class="flexible-input">
+			<label for="city">City</label>
+			<input type="text" id="city" name="user_city"></div>
+
+			<div class="flexible-input">
+			<label for="state">State</label>
+			<select id="state" name="user_state">
+				<option value="" disabled selected>Choose State</option>
+				<option value="alabama">Alabama</option>	
+				<option value="Alaska">Alaska</option>
+				<option value="Arizona">Arizona</option>
+				<option value="Arkansas">Arkansas</option>
+				<option value="California">California</option>
+				<option value="Colarado">Colarado</option>
+				<option value="Connecticut">Connecticut</option>
+				<option value="Delaware">Delaware</option>
+				<option value="Florida">Florida</option>
+				<option value="Georgia">Georgia</option>
+				<option value="Hawaii">Hawaii</option>
+				<option value="Idaho">Idaho</option>
+				<option value="Illinois">Illinois</option>
+				<option value="Indiana">Indiana</option>
+				<option value="Iowa">Iowa</option>
+				<option value="Kansas">Kansas</option>
+				<option value="Kentucky">Kentucky</option>
+				<option value="Louisiana">Louisiana</option>
+				<option value="Maine">Maine</option>
+				<option value="Maryland">Maryland</option>
+				<option value="Massachusetts">Massachusetts</option>
+				<option value="Michigan">Michigan</option>
+				<option value="Minnesota">Minnesota</option>
+				<option value="Mississippi">Mississippi</option>
+				<option value="Missouri">Missouri</option>
+				<option value="Montana">Montana</option>
+				<option value="Nebrasaka">Nebraska</option>
+				<option value="Nevada">Nevada</option>
+				<option value="New Hampshire">New Hampshire</option>
+				<option value="New Jersey">New Jersey</option>
+				<option value="New Mexico">New Mexico</option>
+				<option value="New York">New York</option>
+				<option value="North Carolina">North Carolina</option>
+				<option value="North Dakota">North Dakota</option>
+				<option value="Ohio">Ohio</option>
+				<option value="Oklahoma">Oklahoma</option>
+				<option value="Oregon">Oregon</option>
+				<option value="Pennsylvania">Pennsylvania</option>
+				<option value="Rhode Island">Rhode Island</option>
+				<option value="South Carolina">South Carolina</option>
+				<option value="South Dakota">South Dakota</option>
+				<option value="Tennessee">Tennessee</option>
+				<option value="Texas">Texas</option>
+				<option value="Utah">Utah</option>
+				<option value="Vermont">Vermont</option>
+				<option value="Virginia">Virginia</option>
+				<option value="Washington">Washington</option>
+				<option value="West Virginia">West Virginia</option>
+				<option value="Wisconsin">Wisconsin</option>
+				<option value="Wyoming">Wyoming</option>
+			</select></div>
+			
+			<div class="flexible-input">
+			<label for="zipcode">Zip Code</label>
+			<input type="text" id="zipcode" name="user_zipcode"></div>
+
+		</fieldset>
 		
-		<div class="flexible-input">
-		<label for="email">Email Address</label>
-		<input type="email" id="email" name="user_email" placeholder="Required" required></div>
+		<fieldset>
 
-		<div class="flexible-input">
-		<label for="phone">Phone Number</label>
-		<input type="tel" id="phone" name="user_phone"></div>
+			<legend>Newsletter</legend>
 
-		<div class="flexible-input">
-		<label for="address">Street Address</label>
-		<input type="text" id="address" name="user_address"></div>
+			<label>Select the newsletters you would like to receive</label>
+				
+				<input type="checkbox" id="html_news" value="html_news" name="newsletter_receive"><label for="html_news">HTML News</label>
+				<input type="checkbox" id="css_news" value="css_news" name="newsletter_receive"><label for="css_news">CSS News</label>
+				<input type="checkbox" id="javascript_news" value="javascript_news" name="newsletter_receive"><label for="javascript_news">Javascript News</label>
 
-		<div class="flexible-input">
-		<label for="city">City</label>
-		<input type="text" id="city" name="user_city"></div>
+			<label>Newsletter format</label>
+				
+				<input type="radio" id="html_format" value="html_format" name="html_format"><label for="html_format">HTML</label>
+				<input type="radio" id="plain_format" value="plain_format" name="newsletter_format"><label for="plain_format">Plain text</label>
+				
 
-		<div class="flexible-input">
-		<label for="state">State</label>
-		<select id="state" name="user_state">
-			<option value="" disabled selected>Choose State</option>
-			<option value="alabama">Alabama</option>	
-			<option value="Alaska">Alaska</option>
-			<option value="Arizona">Arizona</option>
-			<option value="Arkansas">Arkansas</option>
-			<option value="California">California</option>
-			<option value="Colarado">Colarado</option>
-			<option value="Connecticut">Connecticut</option>
-			<option value="Delaware">Delaware</option>
-			<option value="Florida">Florida</option>
-			<option value="Georgia">Georgia</option>
-			<option value="Hawaii">Hawaii</option>
-			<option value="Idaho">Idaho</option>
-			<option value="Illinois">Illinois</option>
-			<option value="Indiana">Indiana</option>
-			<option value="Iowa">Iowa</option>
-			<option value="Kansas">Kansas</option>
-			<option value="Kentucky">Kentucky</option>
-			<option value="Louisiana">Louisiana</option>
-			<option value="Maine">Maine</option>
-			<option value="Maryland">Maryland</option>
-			<option value="Massachusetts">Massachusetts</option>
-			<option value="Michigan">Michigan</option>
-			<option value="Minnesota">Minnesota</option>
-			<option value="Mississippi">Mississippi</option>
-			<option value="Missouri">Missouri</option>
-			<option value="Montana">Montana</option>
-			<option value="Nebrasaka">Nebraska</option>
-			<option value="Nevada">Nevada</option>
-			<option value="New Hampshire">New Hampshire</option>
-			<option value="New Jersey">New Jersey</option>
-			<option value="New Mexico">New Mexico</option>
-			<option value="New York">New York</option>
-			<option value="North Carolina">North Carolina</option>
-			<option value="North Dakota">North Dakota</option>
-			<option value="Ohio">Ohio</option>
-			<option value="Oklahoma">Oklahoma</option>
-			<option value="Oregon">Oregon</option>
-			<option value="Pennsylvania">Pennsylvania</option>
-			<option value="Rhode Island">Rhode Island</option>
-			<option value="South Carolina">South Carolina</option>
-			<option value="South Dakota">South Dakota</option>
-			<option value="Tennessee">Tennessee</option>
-			<option value="Texas">Texas</option>
-			<option value="Utah">Utah</option>
-			<option value="Vermont">Vermont</option>
-			<option value="Virginia">Virginia</option>
-			<option value="Washington">Washington</option>
-			<option value="West Virginia">West Virginia</option>
-			<option value="Wisconsin">Wisconsin</option>
-			<option value="Wyoming">Wyoming</option>
-		</select></div>
+			<label for="topics">Other topics you'd like to hear about</label>
+			<textarea id="topics" name="user_topics"></textarea>
+
+		</fieldset>	
 		
-		<div class="flexible-input">
-		<label for="zipcode">Zip Code</label>
-		<input type="text" id="zipcode" name="user_zipcode"></div>
-
-	</fieldset>
-	
-	<fieldset>
-
-		<legend>Newsletter</legend>
-
-		<label>Select the newsletters you would like to receive</label>
-			
-			<input type="checkbox" id="html_news" value="html_news" name="newsletter_receive"><label for="html_news">HTML News</label>
-			<input type="checkbox" id="css_news" value="css_news" name="newsletter_receive"><label for="css_news">CSS News</label>
-			<input type="checkbox" id="javascript_news" value="javascript_news" name="newsletter_receive"><label for="javascript_news">Javascript News</label>
-
-		<label>Newsletter format</label>
-			
-			<input type="radio" id="html_format" value="html_format" name="html_format"><label for="html_format">HTML</label>
-			<input type="radio" id="plain_format" value="plain_format" name="newsletter_format"><label for="plain_format">Plain text</label>
-			
-
-		<label for="topics">Other topics you'd like to hear about</label>
-		<textarea id="topics" name="user_topics"></textarea>
-
-	</fieldset>	
-	
-	<button type="submit">Sign Up</button>
-
-</body>
+			<button type="submit">Sign Up</button>
+</form>
+</div>
 
 <footer>
 
 	<p>Copyright The Code Review</p>
 
 </footer>
-
-</div>
+</body>
 
 </html>
